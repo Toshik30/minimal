@@ -1,23 +1,23 @@
 @font-face {
 	font-family: "Lato-Regular";
-	src: url("../src/fonts/Lato-Regular.ttf") format("opentype");
+	src: url("../fonts/Lato-Regular.ttf") format("opentype");
 }
 $primary-font: Lato, sans-serif;
 
 @font-face {
 	font-family: "Oswald-Regular";
-	src: url("../src/fonts/Oswald-Regular.ttf") format("opentype");
+	src: url("../fonts/Oswald-Regular.ttf") format("opentype");
 }
 $secondary-font: Oswald-Regular, sans-serif;
 @font-face {
 	font-family: "Oswald-Light";
-	src: url("../src/fonts/Oswald-Light.ttf") format("opentype");
+	src: url("../fonts/Oswald-Light.ttf") format("opentype");
 }
 $secondary-light-font: Oswald-Light, sans-serif;
 
 @font-face {
 	font-family: "Lato-Light";
-	src: url("../src/fonts/Lato-Light.ttf") format("opentype");
+	src: url("../fonts/Lato-Light.ttf") format("opentype");
 }
 $primary-light-font: Lato-light, sans-serif;
 
@@ -29,7 +29,7 @@ $primary-bold-font: Lato-Bold, sans-serif;
 
 @font-face {
 	font-family: "Oswald-Bold";
-	src: url("../src/fonts/Oswald-Bold.ttf") format("opentype");
+	src: url("../fonts/Oswald-Bold.ttf") format("opentype");
 }
 $secondary-bold-font: Oswald-Bold, sans-serif;
 

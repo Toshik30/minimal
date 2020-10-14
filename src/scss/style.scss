@@ -9,6 +9,9 @@
 	color: #fff;
 	font-family: $primary-font;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: #000;
 }
@@ -22,11 +25,10 @@ h3 {
 }
 span {
 	text-align: center;
-	font-family: $primary-light-font;
+	font-family: $secondary-light-font;
 	font-size: 18px;
 	display: block;
 	color: #D3D3D3;
-	padding-bottom: 60px;
 }
 
 #logo {
@@ -38,40 +40,135 @@ span {
 	text-transform: uppercase;
 }
 .header {
-	background: url(/images/Circle_Background.png) 100% 25% no-repeat;
+	background: url(../images/Circle_Background.png) 100% 25% no-repeat;
 	
 }
 .header-content {
 	padding-top: 100px;
 
+	h2 {
+		font-family: $secondary-light-font;
+	}
+
 	p {
 		max-width: 60%;
 		font-family: $secondary-light-font;
+		font-size: 20px;
+
+		@include for-phone {
+		max-width: 80%;
+	}
+	}
+	a {
+		display: inline-flex;
+		margin: 50px 0;
+		position: relative;
+		left: calc(50% - 135px);
+		padding: 15px 30px;
+		color: #fff;
+		font-size: 32px;
+		letter-spacing:2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: 0.5s;
+
+
+	svg, rect {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  fill: transparent;
+	}
+	 svg, rect {
+	  stroke-width: 2;
+	  stroke: #fff;
+	  stroke-dasharray: 100;
+	  animation: anim-but 2s linear infinite;
+	}
+	}
+		
+	@keyframes anim-but {
+	  0% {
+	    stroke-dashoffset: 400;
+	  }
+	  100% {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	@include for-phone {
+		padding-top: 50px;
 	}
 }
 
 .gallery {
 	padding-top: 120px;
-	text-align: center;
 
-	.content-gallery {
-		padding-top: 80px;
-
-		img {
-			margin: 4px;	
-		}
+	@include for-phone {
+		padding-top: 50px;
 	}
+
+
+	img {
+		max-width: 100%;
+		margin-bottom: 10px;
+		filter: grayscale(100%);
+		display: flex;
+		transition: 1.5s;
+
+		&:hover {
+			filter: grayscale(0%);
+		}
+
+	}
+
 }
+
 .information {
-	background: url(/images/Circle_Background_02.png) 0% 0% no-repeat;
+	background: url(../images/Circle_Background_02.png) 0% 0% no-repeat;
 }
 .carousel-inner {
 	img {
 		min-height: 100%;
-		max-height: 540px;
-
+		
 	}
 }
 .carousel-item {
 	box-shadow: inset 0 0 60px 160px black;
+}
+
+.to-top {
+	background: #fff;
+	position: fixed;
+	bottom :16px;
+	right: 32px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	font-size: 32px;
+	color: #1f1f1f;
+	text-decoration: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all .4s;
+
+	&.active {
+	  bottom: 32px;
+	  pointer-events: auto;
+	  opacity:1;
+	}
+	span {
+		width: 40px;
+		height: 40px;
+		background: url(../images/arrows.png) center/contain no-repeat;
+	}
+}
+footer {
+	a {
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
