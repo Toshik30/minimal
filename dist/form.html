@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Luxury-life</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<section class="form">
+		<div class="container">
+			<h2><strong>Оставь заявку</strong> прямо сейчас<br> и <strong>мы</strong> с тобой <strong>свяжемся</strong></h2>
+			<form action="telegram.php" method="post">
+				<input type="text" name="name" placeholder="Имя" required>
+				<input type="text" name="contact" placeholder="Номер телефона" required>
+				<input type="text" name="location" placeholder="Место проживания" required>
+				<span>Готовность к переезду в Москву</span>
+				<div class="cheking">
+					<div>
+						<input type="radio" id="subscribeYesRelocate" name="migration" value="Да">
+						<label for="subscribeYesRelocate">Да</label>
+					</div>
+					<div>
+						<input type="radio" id="subscribeNoRelocate" name="migration" value="Нет">
+						<label for="subscribeNoRelocate">Нет</label>
+					</div>
+				</div>
+				<span>Готова зарабатывать от 500$ в день? </span>
+				<div class="cheking">
+					<div>
+						<input type="radio" id="subscribeYesSalary" name="work" value="Да">
+						<label for="subscribeYesSalary">Да</label>
+					</div>
+					<div>
+						<input type="radio" id="subscribeNoSalary" name="work" value="нет">
+						<label for="subscribeNoSalary">Нет</label>
+					</div>
+				</div>
+				<input type="text" name="age" placeholder="Возраст">
+				<span>Легко ли дается общение с мужчинами?</span>
+				<div class="cheking">
+					<div>
+						<input type="radio" id="subscribeYesSpeaking" name="communication" value="Да">
+						<label for="subscribeYesSpeaking">Да</label>
+					</div>
+					<div>
+						<input type="radio" id="subscribeNoSpeaking" name="communication" value="Нет">
+						<label for="subscribeNoSpeaking">Нет</label>
+					</div>
+				</div>
+				<span>Был ли опыт работы в агентстве?</span>
+				<div class="cheking">
+					<div>
+						<input type="radio" id="subscribeYesExp" name="expirience" value="Да">
+						<label for="subscribeYesExp">Да</label>
+					</div>
+					<div>
+						<input type="radio" id="subscribeNoExp" name="expirience" value="Нет">
+						<label for="subscribeNoExp">Нет</label>
+					</div>
+				</div>
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
+	</section>
+</body>
+</html>
