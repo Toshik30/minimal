@@ -2,7 +2,7 @@
 	font-family: "Lato-Regular";
 	src: url("../fonts/Lato-Regular.ttf") format("opentype");
 }
-$primary-font: Lato, sans-serif;
+$primary-font: Lato-Regular, sans-serif;
 
 @font-face {
 	font-family: "Oswald-Regular";
@@ -23,7 +23,7 @@ $primary-light-font: Lato-light, sans-serif;
 
 @font-face {
 	font-family: "Lato-Bold";
-	src: url("../src/fonts/Lato-Bold.ttf") format("opentype");
+	src: url("../fonts/Lato-Bold.ttf") format("opentype");
 }
 $primary-bold-font: Lato-Bold, sans-serif;
 
